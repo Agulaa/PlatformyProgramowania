@@ -17,21 +17,10 @@ public class Laboratorium_1 {
         //zad1();
         //zad2();
         //zad3();
-        int n = 100;
-        int[] tab = new int[n];
 
-        for(int i=0; i<n; i++){
-            tab[i]= i;
-        }
-        zad4_1(tab);
-        zad4_2(tab);
-        int[] tab2 = new int[n];
+        zad4_1();
+        zad4_2();
 
-        for(int i=n; i>=0; i--){
-            tab2[i]= i;
-        }
-        zad4_1(tab2;
-        zad4_2(tab2);
     }
 
     public static void zad1(){
@@ -150,13 +139,13 @@ public class Laboratorium_1 {
         return tab;
 
     }
-    public static void zad4_1(int[] tab){
-//        int n = 100;
-//        int[] tab = new int[n];
-//        Random rand = new Random();
-//        for(int i=0; i<n; i++){
-//            tab[i]= rand.nextInt();
-//        }
+    public static void zad4_1(){
+        int n = 100;
+        int[] tab = new int[n];
+        Random rand = new Random();
+        for(int i=0; i<n; i++){
+            tab[i]= rand.nextInt();
+        }
         long startTime = System.nanoTime();
         int[] sortTab_ros = insertion_ros(tab);
         long estimatedTime = System.nanoTime() - startTime;
@@ -203,13 +192,13 @@ public class Laboratorium_1 {
         }
         return output;
     }
-    public static void zad4_2(int[] tab){
-//        int n = 100;
-//        int[] tab = new int[n];
-//        Random rand = new Random();
-//        for(int i=0; i<n; i++){
-//            tab[i]= rand.nextInt();
-//        }
+    public static void zad4_2(){
+        int n = 100;
+        int[] tab = new int[n];
+        Random rand = new Random();
+        for(int i=0; i<n; i++){
+            tab[i]= rand.nextInt();
+        }
         long startTime1 = System.nanoTime();
         int[] result = mergeSort(tab);
         long estimatedTime2 = System.nanoTime() - startTime1;
